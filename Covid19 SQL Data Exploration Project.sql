@@ -1,3 +1,6 @@
+Covid 19 Data Exploration 
+Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types
+
 select *
 from [Portfolio Project]..covidDeaths
 where continent is not null
@@ -104,7 +107,7 @@ where dea.continent is not null
 order by 2,3
 
 
--- USE CTE
+-- Using CTE to perform Calculation on Partition By in previous query
 
 With PopsvsVac (Continent, location, date, population, new_vaccinations, RunningTotal_VaccinatedPeople)
 as 
@@ -123,7 +126,7 @@ select *, (RunningTotal_VaccinatedPeople/Population)*100
 from popsvsvac
 
 
---TEMP TABLE
+--Using Temp Table to perform Calculation on Partition By in previous quer
 
 Drop table if exists #Percentpopulationvaccinated
 Create table #PercentPopulationVaccincated
