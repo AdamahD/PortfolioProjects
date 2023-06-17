@@ -1,3 +1,9 @@
+/*
+CLEANED HOUSING DATA USING THE FOLLOWWING SQL QUERIES; ALTER TABLE, UPDATE, SUBSTRING, PARSENAME, CTEs
+
+*/
+
+
 select *
 from dbo.[Nashville Housing Data for Data Cleaning]
 
